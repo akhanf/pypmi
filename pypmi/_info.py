@@ -12,7 +12,7 @@ from pandas.api.types import CategoricalDtype as cdtype
 BEHAVIORAL_INFO = {
     'benton': {
         'files': {
-            'Benton_Judgment_of_Line_Orientation.csv': [
+            'Benton_Judgement_of_Line_Orientation.csv': [
                 [f'BJLOT{num}' for num in range(1, 31)]
             ]
         }
@@ -37,7 +37,7 @@ BEHAVIORAL_INFO = {
     },
     'gds': {
         'files': {
-            'Geriatric_Depression_Scale__Short_.csv': [
+            'Geriatric_Depression_Scale__Short_Version_.csv': [
                 ['GDSSATIS', 'GDSGSPIR', 'GDSHAPPY', 'GDSALIVE', 'GDSENRGY'],
                 ['GDSDROPD', 'GDSEMPTY', 'GDSBORED', 'GDSAFRAD', 'GDSHLPLS',
                  'GDSHOME', 'GDSMEMRY', 'GDSWRTLS', 'GDSHOPLS', 'GDSBETER']
@@ -50,14 +50,14 @@ BEHAVIORAL_INFO = {
     },
     'hvlt_recall': {
         'files': {
-            'Hopkins_Verbal_Learning_Test.csv': [
+            'Hopkins_Verbal_Learning_Test_-_Revised.csv': [
                 ['HVLTRT1', 'HVLTRT2', 'HVLTRT3']
             ]
         }
     },
     'hvlt_recognition': {
         'files': {
-            'Hopkins_Verbal_Learning_Test.csv': [
+            'Hopkins_Verbal_Learning_Test_-_Revised.csv': [
                 ['HVLTREC'],
                 ['HVLTFPRL'],
                 ['HVLTFPUN']
@@ -71,7 +71,7 @@ BEHAVIORAL_INFO = {
     },
     'hvlt_retention': {
         'files': {
-            'Hopkins_Verbal_Learning_Test.csv': [
+            'Hopkins_Verbal_Learning_Test_-_Revised.csv': [
                 ['HVLTRDLY'],
                 ['HVLTRT2', 'HVLTRT3']
             ]
@@ -87,7 +87,7 @@ BEHAVIORAL_INFO = {
     },
     'lns': {
         'files': {
-            'Letter_-_Number_Sequencing__PD_.csv': [
+            'Letter_-_Number_Sequencing.csv': [
                 ['LNS1A', 'LNS1B', 'LNS1C', 'LNS2A', 'LNS2B', 'LNS2C', 'LNS3A',
                  'LNS3B', 'LNS3C', 'LNS4A', 'LNS4B', 'LNS4C', 'LNS5A', 'LNS5B',
                  'LNS5C', 'LNS6A', 'LNS6B', 'LNS6C', 'LNS7A', 'LNS7B', 'LNS7C']
@@ -122,7 +122,7 @@ BEHAVIORAL_INFO = {
     },
     'quip': {
         'files': {
-            'QUIP_Current_Short.csv': [
+            'QUIP-Current-Short.csv': [
                 ['CNTRLGMB', 'TMGAMBLE'],
                 ['CNTRLSEX', 'TMSEX'],
                 ['CNTRLBUY', 'TMBUY'],
@@ -136,7 +136,7 @@ BEHAVIORAL_INFO = {
     },
     'rbd': {
         'files': {
-            'REM_Sleep_Disorder_Questionnaire.csv': [
+            'REM_Sleep_Behavior_Disorder_Questionnaire.csv': [
                 ['DRMVIVID', 'DRMAGRAC', 'DRMNOCTB', 'SLPLMBMV', 'SLPINJUR',
                  'DRMVERBL', 'DRMFIGHT', 'DRMUMV', 'DRMOBJFL', 'MVAWAKEN',
                  'DRMREMEM', 'SLPDSTRB'],
@@ -162,14 +162,14 @@ BEHAVIORAL_INFO = {
     },
     'se_adl': {
         'files': {
-            'Modified_Schwab_+_England_ADL.csv': [
+            'Modified_Schwab___England_Activities_of_Daily_Living.csv': [
                 ['MSEADLG']
             ]
         }
     },
     'semantic_fluency': {
         'files': {
-            'Semantic_Fluency.csv': [
+            'Modified_Semantic_Fluency.csv': [
                 ['VLTANIM', 'VLTVEG', 'VLTFRUIT']
             ]
         }
@@ -205,7 +205,7 @@ BEHAVIORAL_INFO = {
     },
     'symbol_digit': {
         'files': {
-            'Symbol_Digit_Modalities.csv': [
+            'Symbol_Digit_Modalities_Test.csv': [
                 ['SDMTOTAL']
             ]
         }
@@ -239,11 +239,11 @@ BEHAVIORAL_INFO = {
     },
     'updrs_i': {
         'files': {
-            'MDS_UPDRS_Part_I.csv': [
+            'MDS-UPDRS_Part_I.csv': [
                 ['NP1COG', 'NP1HALL', 'NP1DPRS', 'NP1ANXS', 'NP1APAT',
                  'NP1DDS']
             ],
-            'MDS_UPDRS_Part_I__Patient_Questionnaire.csv': [
+            'MDS-UPDRS_Part_I_Patient_Questionnaire.csv': [
                 ['NP1SLPN', 'NP1SLPD', 'NP1PAIN', 'NP1URIN', 'NP1CNST',
                  'NP1LTHD', 'NP1FATG']
             ]
@@ -265,7 +265,7 @@ BEHAVIORAL_INFO = {
         'files': {
             'MDS_UPDRS_Part_III.csv': [
                 ['NP3SPCH', 'NP3FACXP', 'NP3RIGN', 'NP3RIGRU', 'NP3RIGLU',
-                 'PN3RIGRL', 'NP3RIGLL', 'NP3FTAPR', 'NP3FTAPL', 'NP3HMOVR',
+                 'NP3RIGRL', 'NP3RIGLL', 'NP3FTAPR', 'NP3FTAPL', 'NP3HMOVR',
                  'NP3HMOVL', 'NP3PRSPR', 'NP3PRSPL', 'NP3TTAPR', 'NP3TTAPL',
                  'NP3LGAGR', 'NP3LGAGL', 'NP3RISNG', 'NP3GAIT', 'NP3FRZGT',
                  'NP3PSTBL', 'NP3POSTR', 'NP3BRADY', 'NP3PTRMR', 'NP3PTRML',
@@ -276,19 +276,12 @@ BEHAVIORAL_INFO = {
     },
     'updrs_iv': {
         'files': {
-            'MDS_UPDRS_Part_IV.csv': [
+            'MDS-UPDRS_Part_IV__Motor_Complications.csv': [
                 ['NP4WDYSK', 'NP4DYSKI', 'NP4OFF', 'NP4FLCTI', 'NP4FLCTX',
                  'NP4DYSTN']
             ]
         }
     },
-    'upsit': {
-        'files': {
-            'University_of_Pennsylvania_Smell_ID_Test.csv': [
-                ['UPSITBK1', 'UPSITBK2', 'UPSITBK3', 'UPSITBK4']
-            ]
-        }
-    }
 }
 
 DEMOGRAPHIC_INFO = {
@@ -531,3 +524,4 @@ VISITS = cdtype([
     'U05',
     'U06',
 ], ordered=True)
+
